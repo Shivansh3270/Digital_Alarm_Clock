@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <link rel="stylesheet" href="./Style.css">
+    <script src="./Scrypt.js" defer></script>
+</head>
+<body>
+    <div class="clock">
+        <fieldset class="neon">
+            <legend>Simple Alarm Clock</legend>
+        <!-- <p style="font-size: 10px;">Simple Alarm Clock</p> -->
+        <span id="hours">00</span>
+        <span>:</span>
+        <span id="minutes">00</span>
+        <span>:</span>
+        <span id="seconds">00</span>
+        <span id="session">AM</span><br>
+    </fieldset>
+        
+        <div class="disp_date">
+        <span id="date">01</span>
+        <span>/</span>
+        <span id="month">01</span>
+        <span>/</span>
+        <span id="year">2000</span>
+        <br>
+        <span id="day">Saturday</span>
+    </div>
+        <div class="setalarm">
+            
+            <input onchange="setAlarmTime(this.value)" class="dateinput" name="alarmTime" type="datetime-local"></div>
+        <div class="controls">
+            <button onclick="setAlarm()" class="button set-alarm">Set alarm</button>
+            <button onclick="clearAlarm()" class="button pause-alarm">Stop alarm</button>
+        </div></div>
+    </div>
+</body>
+</html>
